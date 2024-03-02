@@ -14,5 +14,12 @@ if __name__ == "__main__":
         514: decimal.Decimal("164.1"),
         372: decimal.Decimal("92"),
     }
-    assert get_transaction_amount(transaction_id=156, transactions_amounts_map=transactions_amounts_map) == decimal.Decimal("30.6")
-    assert get_transaction_amount(transaction_id=1000, transactions_amounts_map=transactions_amounts_map) is None
+    assert get_transaction_amount(
+        transaction_id=156, transactions_amounts_map=transactions_amounts_map
+    ) == decimal.Decimal("30.6")
+    assert (
+        get_transaction_amount(
+            transaction_id=1000, transactions_amounts_map=transactions_amounts_map
+        )
+        is None
+    )
