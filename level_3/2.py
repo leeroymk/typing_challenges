@@ -10,7 +10,6 @@ class User(TypedDict):
 
 
 def calculate_total_spent_for_user(user: User) -> int:
-    # попробуй тут воспользовать typing.TypedDict
     pass
 
 
