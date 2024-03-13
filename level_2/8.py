@@ -1,11 +1,13 @@
-from typing import Mapping
+from typing import Mapping, TypeAlias
 
 from constants import ___
+
+Transaction: TypeAlias = tuple[str, int, list[int]]
 
 
 def calculate_total_spent_for_users(
     users_ids: set[int],
-    users_ids_to_users_map: Mapping[int, tuple[str, int, list[int]]],
+    users_ids_to_users_map: Mapping[int, Transaction],
 ) -> int:
     pass
 
